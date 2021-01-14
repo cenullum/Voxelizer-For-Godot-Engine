@@ -23,4 +23,4 @@ You can drag and drop your image to be voxelated then move this voxelated mesh b
 
 This code build a wall which is 2 triangles. It does this if there are no pixels nearby by looking at the bottom, top left and right of each pixel of the image then creates transparent up and down faces. These faces have the image of the whole picture.
 
-![alt text](https://img.itch.zone/aW1nLzM5NDM2NTUucG5n/original/a51F9p.png)
+![alt text](https://img.itch.zone/aW1nLzQ5Nzg0NzIucG5n/original/ZIvUPw.png)
