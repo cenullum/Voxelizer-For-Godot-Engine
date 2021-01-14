@@ -18,13 +18,13 @@ var width:float
 var img 
 
 
-var debug=true
-
+var debug=false
 
 
 func _ready():
 	get_tree().connect("files_dropped", self, "_files_dropped")
-	voxelization(voxel_me)
+	if is_instance_valid(voxel_me):
+		voxelization(voxel_me)
 
 
 export(Vector2) var icon_size = Vector2(64, 64)
@@ -68,7 +68,7 @@ func voxelization(spr):
 	var ms = OS.get_ticks_msec()
 	triangleCount=0
 	voxel_me=spr
-	if voxel_me == null:
+	if spr == null:
 		return
 	img = spr.get_data()
 	img.lock()
@@ -76,7 +76,7 @@ func voxelization(spr):
 	width = spr.get_width()
 	var mesh = Mesh.new()
 	surfTool.set_material(material)
-	material.albedo_texture = voxel_me
+	material.albedo_texture = spr
 	surfTool.begin(Mesh.PRIMITIVE_TRIANGLES)
 	
 	for x in spr.get_width():
@@ -99,7 +99,6 @@ func voxelization(spr):
 		itex.create_from_image(img,0)
 		material.albedo_texture = itex
 	
-
 	img.unlock()
 	ms -= OS.get_ticks_msec()
 	
