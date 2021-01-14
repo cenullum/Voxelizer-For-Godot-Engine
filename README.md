@@ -1,13 +1,14 @@
 # Voxelizer For Godot Engine
  A demo of voxelation which makes 3d mesh from 2d sprite
-
+ 
 
 
 # Demo Video
 [![IMAGE ALT TEXT HERE](https://i.imgur.com/djm9qMS.png)](https://youtu.be/vDkpGOerccQ)
 
 # Demo Introduction
-You can drag and drop your image to be voxelated then move this voxelated mesh by using A W S D keys. Also you can give depth value and alpha cut value (alpha_offset) which is for considering a pixel as opaque instead of transparent.
+Download Link: https://cenullum.itch.io/godot-engine-voxelizer
+You can drag and drop your image to be voxelated then move this voxelated mesh by using A W S D keys. Also you can give depth value and alpha cut value (alpha_offset) which is for considering a pixel as opaque instead of transparent. 
 
 
 # HOW TO IMPLEMENT TO YOUR OWN PROJECT:
