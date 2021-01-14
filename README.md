@@ -15,10 +15,11 @@ You can drag and drop your image to be voxelated then rotate this voxelated mesh
 # HOW TO IMPLEMENT TO YOUR OWN PROJECT:
 
 * Add voxelizer.gd to a MeshInstance node
-* Set sprite to "Voxel Me" on inspector
+* Set image to "Voxel Me" on inspector (image shouldn't have filter)
 * Set TransparentMaterial.tres to "Material" on inspector as script parametre, NOT DIRECTLY
 * You can change alpha offset and depth if you want
 * If you want to change sprite via code you can use func voxelization() and send sprite as parametre in it
+
 
 
 # What voxelizer.gd does?
