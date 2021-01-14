@@ -20,7 +20,7 @@ var img
 
 var debug=true
 
-#tam 32 32 olunca sıkıntı oldu
+
 
 func _ready():
 	get_tree().connect("files_dropped", self, "_files_dropped")
