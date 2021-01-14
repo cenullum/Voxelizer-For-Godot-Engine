@@ -8,6 +8,7 @@
 
 # Demo Introduction
 Download Link: https://cenullum.itch.io/godot-engine-voxelizer
+
 You can drag and drop your image to be voxelated then move this voxelated mesh by using A W S D keys. Also you can give depth value and alpha cut value (alpha_offset) which is for considering a pixel as opaque instead of transparent. 
 
 
