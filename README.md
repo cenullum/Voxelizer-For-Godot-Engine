@@ -1,5 +1,6 @@
 # Voxelizer For Godot Engine
- A demo of voxelation which makes 3d mesh from 2d sprites
+ A demo of voxelation which makes 3d mesh from 2d sprite
+
 
 
 # Demo Video
