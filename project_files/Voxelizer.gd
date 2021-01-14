@@ -27,9 +27,8 @@ func _ready():
 		voxelization(voxel_me)
 
 
-export(Vector2) var icon_size = Vector2(64, 64)
 
-func _files_dropped(images, screen):
+func _files_dropped(images, screen):#delete if this func you don't need
 	$ItemList.clear()
 	var extensions = ResourceLoader.get_recognized_extensions_for_type("Texture")
 	
@@ -45,11 +44,7 @@ func _files_dropped(images, screen):
 	$ItemList.add_item(images[0], tex, true)
 
 
-
-
-
-
-func _process(delta):
+func _process(delta): #delete if this func you don't need
 	
 	if Input.is_action_pressed("rotate_up"):
 		rotate(Vector3.LEFT,turning_speed*delta)

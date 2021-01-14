@@ -7,11 +7,11 @@
 flags_transparent = true
 params_depth_draw_mode = 3
 
-[sub_resource type="SpatialMaterial" id=3]
+[sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0.486275, 0.486275, 0.486275, 1 )
 
-[sub_resource type="CubeMesh" id=4]
-material = SubResource( 3 )
+[sub_resource type="CubeMesh" id=3]
+material = SubResource( 2 )
 size = Vector3( 100, 2, 100 )
 
 [node name="Spatial" type="Spatial"]
@@ -51,7 +51,7 @@ __meta__ = {
 
 [node name="CSGMesh" type="CSGMesh" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.62077, -3.6128 )
-mesh = SubResource( 4 )
+mesh = SubResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -60,7 +60,7 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -14.0
-text = "made by cenullum in godot 3.2.2  in 8 hours                  CC0 1.0 Universal (CC0 1.0)"
+text = "made by cenullum in godot 3.2.2  in 8 hours                  MIT License"
 __meta__ = {
 "_edit_use_anchors_": false
 }
